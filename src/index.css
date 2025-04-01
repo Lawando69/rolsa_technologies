@@ -5,6 +5,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  margin: 0;
+  box-sizing: border-box;
+
+  --green-color: #1C7D46;
+  --grass-green: #68840A;
+  --slight_dark_green: #356200;
+  --background_color: rgba(0,0,0,0.3);
+  --button_color: #EAC452;
 }
 
 code {

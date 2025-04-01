@@ -1,0 +1,21 @@
+#mobile_container{
+    display: none;
+    flex-direction: column;
+    background-color: var(--background_color);
+
+
+    /* TODO: Complete the css for the icon and the rest of the navbar */
+    /* .menu_icon{
+        margin-right: auto;
+    }
+
+    .menu_icon.open{
+        margin-right: auto;
+    } */
+}
+
+@media only screen and (max-width: 1050px){
+    #mobile_container{
+        display: flex;
+    }
+}
