@@ -2,10 +2,6 @@
     width: 100%;
     height: auto;
 
-    /* NOTE: This is only temporary */
-    /* display: grid;
-    top: 0; */
-
     > h1{
         margin-top: 25px;
         margin-bottom: 10px;
@@ -55,11 +51,10 @@
         color: rgb(223, 223, 223);
     }
     > img{
-            width: 400px;
-            height: 300px;
-            object-fit: cover;
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
+        max-width: 100%;
+        object-fit: cover;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
     }
 }
 
@@ -69,7 +64,7 @@
 }
 
 .energy_change_container{
-    margin-top: 300px;
+    margin-top: 350px;
 }
 
 .energy_change_content{
@@ -113,7 +108,7 @@
         }
 
         > a:hover{
-            background-color: rgb(231, 231, 231);
+            background-color: var(--box_color);
             border: 1px solid black;
         }
     }

@@ -12,12 +12,12 @@
         object-fit: cover;
     }
     .text_container{
-        width: 1200px;
+        max-width: 100%;
         height: auto;
         position: absolute;
         left: 400px;
         right: 400px;
-        top: 300px;
+        top: 200px;
     }
     .text{
         font-weight: 900;

@@ -3,7 +3,7 @@ import WindTurbine from "../../Components/WindTurbine/WindTurbine";
 
 import Image1 from "../../Assets/Images/green_energy.jpg";
 import Image2 from "../../Assets/Images/solar_panels.jpg";
-import Image3 from "../../Assets/Images/ev_charging_station.jpg";
+import Image3 from "../../Assets/Images/ev_charging_stations_image.jpg";
 import Image4 from "../../Assets/Images/smart_meter.jpg";
 import Image5 from "../../Assets/Images/green_energy_2.jpg";
 import Image6 from "../../Assets/Images/green_energy_4.jpg";

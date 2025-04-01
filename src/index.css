@@ -14,6 +14,7 @@ body {
   --slight_dark_green: #356200;
   --background_color: rgba(0,0,0,0.3);
   --button_color: #EAC452;
+  --box_color:rgb(231, 231, 231);
 }
 
 code {
