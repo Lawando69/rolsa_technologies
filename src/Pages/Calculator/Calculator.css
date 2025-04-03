@@ -1,0 +1,50 @@
+.calculator_container{
+    width: 100%;
+    height: auto;
+
+    .calculator_holder{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: lightblue;
+    }
+    
+    .upper_section{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        
+
+        .left_section{
+            display: flex;
+            width: 50%;
+            height: auto;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .right_section{
+            display: flex;
+            width: 50%;
+            height: auto;
+            flex-direction: column;
+            align-items: center;
+        }
+
+    }
+    
+    .bottom_section{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+.input_class{
+    width: 180px;
+}
+
+/* TODO: Move the Submit button to the next line */

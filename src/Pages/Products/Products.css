@@ -1,0 +1,13 @@
+.products_container{
+    width: 100%;
+    height: auto;
+
+    > h1{
+        margin-top: 25px;
+        margin-bottom: 10px;
+        margin-left: 235px;
+        font-weight: 750;
+        font-family: sans-serif;
+        font-size: 45px;
+    }
+}

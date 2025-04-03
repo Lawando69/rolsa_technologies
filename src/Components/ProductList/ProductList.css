@@ -1,0 +1,47 @@
+.product_list_container{
+    width: 100%;
+    height: auto;
+
+    .product_list_holder{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 100px;
+        /* NOTE: margin might not be needed here */
+    }
+}
+
+.product_list{
+    width: 450px;
+    margin: 20px;
+    min-width: 350px;
+    background-color: var(--background_color);
+    backdrop-filter: blur(16px);
+    /* NOTE: Change the blur effect accordingly */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+
+    > p{
+        margin: 10px 10px;
+        font-size: 18px;
+        color: rgb(223, 223, 223);
+    }
+    > img{
+        max-width: 100%;
+        object-fit: cover;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+}
+
+.product_list:hover{
+    cursor: pointer;
+    box-shadow: var(--box_shadow);
+}
