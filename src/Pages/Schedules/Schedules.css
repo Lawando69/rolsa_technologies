@@ -1,0 +1,231 @@
+.schedules_container{
+    width: 100%;
+    height: auto;
+
+    .schedule_holder_upper{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background-color: var(--box_color);
+        border-radius: 10px;
+
+    }
+
+    .schedules_holder_middle{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        margin-top: 70px;
+    }
+
+    .schedules_holder_bottom{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+
+        > h1{
+            margin-left: 90px;
+            font-weight: 750;
+            font-family: sans-serif;
+            font-size: 45px;
+        }
+    }
+}
+
+.info_holder{
+    width: 800px;
+    margin: 20px;
+    min-width: 350px;
+    background-color: var(--background_color);
+    backdrop-filter: blur(16px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    z-index: 1;
+
+    > p{
+        margin: 10px 20px;
+        font-size: 18px;
+        color: rgb(223, 223, 223);
+        padding: 20px 10px;
+        font-weight: 600;
+    }
+    > img{
+        max-width: 100%;
+        object-fit: cover;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+}
+
+.top_section{
+    display: flex;
+    flex-direction: row;
+    gap: 400px;
+    padding: 10px 20px;
+    justify-content: center;
+    position: relative;
+    margin-top: 50px;
+
+    .text_container{
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        > h1{
+            font-weight: 750;
+            font-family: sans-serif;
+            font-size: 45px;
+        }
+
+        > p{
+            font-weight: 500;
+            font-family: sans-serif;
+            font-size: 20px;
+        }
+
+        > button{
+            width: 450px;
+            height: 50px;
+            background-color: var(--button_color);
+            border: 1px solid;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            font-family: sans-serif;
+        }
+
+        > button:hover{
+            cursor: pointer;
+            background-color: var(--box_color);
+        }
+    }
+
+    .image_container{
+        max-width: 50%;
+        height: 420px;
+
+        .top_section_image{
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    }
+}
+
+.lower_section{
+    display: flex;
+    flex-direction: row;
+    gap: 400px;
+    padding: 10px 20px;
+    align-items: center;
+
+    .image_container{
+        max-width: 50%;
+        height: 420px;
+
+        .lower_section_image{
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    }
+
+    .text_container{
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        > h1{
+            font-weight: 750;
+            font-family: sans-serif;
+            font-size: 45px;
+        }
+
+        > p{
+            font-weight: 500;
+            font-family: sans-serif;
+            font-size: 20px;
+        }
+    }
+}
+
+.booking_container{
+    width: 100%;
+    height: auto;
+    background-color: lightblue;
+}
+
+.booking_holder{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    max-width: 100%;
+    height: auto ;
+    flex-wrap: nowrap;
+    margin: 10px 20px;
+    background-color: lightsalmon;
+    padding: 25px 15px;
+    gap: 84px;
+    
+
+    .booking_content{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        background-color: red;
+
+        .text_holder{
+            font-size: 24px;
+            font-family: sans-serif;
+            font-weight: 500;
+            width: 75%;
+            text-align: center;
+        }
+    }
+
+    .booking_content_lower{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        background-color: blue;
+        padding: 10px 20px;
+        gap: 15px;
+        
+        .booking_details{
+            width: 200px;
+            height: 24px;
+            border: 1px solid;
+            margin-right: 5px;
+        }
+
+        .booking_details_email{
+            width: 411px;
+            height: 24px;
+            border: 1px solid;
+        }
+
+        .next_button{
+            width: 180px;
+
+        }
+    }
+}
+
+
+
