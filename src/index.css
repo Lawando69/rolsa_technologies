@@ -9,13 +9,15 @@ body {
   margin: 0;
   box-sizing: border-box;
 
-  --green-color: #1C7D46;
-  --grass-green: #68840A;
+  --green_color: #1C7D46;
+  --grass_green: #68840A;
   --slight_dark_green: #356200;
   --background_color: rgba(0,0,0,0.3);
   --button_color: #EAC452;
+  --warm_color: #7d0000;
   --box_color:rgb(231, 231, 231);
   --box_shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  --error_box: #b92727;
 }
 
 code {

@@ -2,49 +2,164 @@
     width: 100%;
     height: auto;
 
+    > h1{
+        margin-top: 25px;
+        margin-bottom: 10px;
+        margin-left: 40px;
+        font-weight: 750;
+        font-family: sans-serif;
+        font-size: 45px;
+    }
+
     .calculator_holder{
-        width: 100%;
-        height: auto;
         display: flex;
         flex-direction: column;
-        background-color: lightblue;
+        align-items: center;
+        background-color: var(--box_color);
+        margin: 0px 20px;
+        padding: 30px;
+        border-radius: 10px;
+        /* NOTE: Padding might not be needed here */
+        .top_section_calculator{
+            display: flex;
+            gap: 24px;
+            margin-bottom: 20px;
+        }
+        
+        .middle_section_calculator{
+            display: flex;
+            gap: 24px;
+            margin-bottom: 20px;
+        }
+
+        .bottom_section_calculator{
+            display: flex;
+            gap: 24px;
+            margin-bottom: 42px;
+        }
+
+        > button{
+            padding: 18px 120px;
+            border-radius: 20px;
+            background-color: var(--button_color);
+            border: 1px solid;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        > button:hover{
+            cursor: pointer;
+            background-color: var(--box_color);
+        }
+
+
+        .calculator_result.open{
+            text-decoration: underline;
+            padding: 10px 20px;
+            font-size: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            color: black;
+        }
+        
+        .calculator_error_message{
+            width: 100%;
+            padding: 2px 20px;
+            display: flex;
+            flex-direction: row;
+            background-color: var(--error_box);
+            border-radius: 10px;
+            color: white;
+            font-size: 17px;
+        
+        }
+
+        .calculator_result_message.exlow{
+            width: 100%;
+            padding: 2px 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: var(--green_color);
+            border-radius: 10px;
+            font-size: 18px;
+            color: white;
+            font-weight: 700;
+        }
+
+        .calculator_result_message.low{
+            width: 100%;
+            padding: 2px 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: var(--slight_dark_green);
+            border-radius: 10px;
+            font-size: 18px;
+            color: white;
+            font-weight: 700;
+        }
+
+        .calculator_result_message.medium{
+            width: 100%;
+            padding: 2px 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: var(--grass_green);
+            border-radius: 10px;
+            font-size: 18px;
+            color: white;
+            font-weight: 700;
+        }
+
+        .calculator_result_message.high{
+            width: 100%;
+            padding: 2px 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: var(--warm_color);
+            border-radius: 10px;
+            font-size: 18px;
+            color: white;
+            font-weight: 700;
+        }
     }
-    
-    .upper_section{
-        width: 100%;
-        height: auto;
+}
+
+#link:hover{
+    color: orange;
+}
+
+.calculator_content{
+    font-size: 32px;
+    font-weight: 700;
+    font-family: sans-serif;
+
+    .cal_input{
+        width: 240px;
+        height: 40px;
+        border-radius: 8px;
+        border: 1px solid;
+        font-size: 20px;
+    }
+
+    .radio_content{
         display: flex;
         flex-direction: row;
-        position: relative;
-        
+        align-items: center;
 
-        .left_section{
-            display: flex;
-            width: 50%;
-            height: auto;
-            flex-direction: column;
-            align-items: center;
+        .cal_radio{
+            width: 50px;
+            height: 30px;
         }
-        
-        .right_section{
-            display: flex;
-            width: 50%;
-            height: auto;
-            flex-direction: column;
-            align-items: center;
+        .cal_radio:hover{
+            cursor: pointer;
         }
-
-    }
-    
-    .bottom_section{
-        display: flex;
-        width: 100%;
-        justify-content: center;
     }
 }
 
-.input_class{
-    width: 180px;
-}
+
 
 /* TODO: Move the Submit button to the next line */

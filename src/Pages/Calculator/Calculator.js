@@ -13,8 +13,8 @@ export default function Calculator(){
     const [footprint, setFootprint] = useState(null);
     
     // NOTE: Text info for the windTurbine image
-    const textTitleHolder = "#";
-    const textInfoHolder = "#";
+    const textTitleHolder = "Carbon Footprint Assessment Tool";
+    const textInfoHolder = "The Carbon Footprint Assessment Tool is designed to help you gain insights into your energy consumption in your home to travel habits and waste management.";
 
     // NOTE: Feature to target the value of the inputs and setting it to the const
     const handleElectricityChange = (e) => {setMonthlyElectricity(Number(e.target.value));}
@@ -56,39 +56,45 @@ export default function Calculator(){
         <div className="calculator_container">
             <WindTurbine textTitle={textTitleHolder} textInfo={textInfoHolder}/>
             {/* TODO: Add the title and info content */}
+            <h1>Carbon Footprint Calculator</h1>
             <div className="calculator_holder">
-                <h1>Carbon Footprint Calculator</h1>
-                <div className="calculator_content">
-                    <label>
-                        Monthly Electricity Usage: <input type="number" value={monthlyElectricity} onChange={handleElectricityChange}/>
-                    </label>
+                <div className="top_section_calculator">
+                    <div className="calculator_content">
+                        <label>
+                            Monthly Electricity Usage: <input type="number" className="cal_input" value={monthlyElectricity} onChange={handleElectricityChange}/>
+                        </label>
+                    </div>
+                    <div className="calculator_content">
+                        <label>
+                            Monthly Gas Usage: <input type="number" className="cal_input" value={monthlyGas} onChange={handleGasChange}/>
+                        </label>
+                    </div>
                 </div>
-                <div className="calculator_content">
-                    <label>
-                        Monthly Gas Usage: <input type="number" value={monthlyGas} onChange={handleGasChange}/>
-                    </label>
+                <div className="middle_section_calculator">
+                    <div className="calculator_content">
+                        <label>
+                            Yearly Mileage (car): <input type="number" className="cal_input" value={yearlyMileage} onChange={handleMileageChange}/>
+                        </label>
+                    </div>
+                    <div className="calculator_content">
+                        <label>
+                            Yearly Flights (4 hours or less): <input type="number" className="cal_input" value={yearlyFlights} onChange={handleFlightsChange}/>
+                        </label>
+                    </div>
                 </div>
-                <div className="calculator_content">
-                    <label>
-                        Yearly Mileage (car): <input type="number" value={yearlyMileage} onChange={handleMileageChange}/>
-                    </label>
-                </div>
-                <div className="calculator_content">
-                    <label>
-                        Yearly Flights (4 hours or less): <input type="number" value={yearlyFlights} onChange={handleFlightsChange}/>
-                    </label>
-                </div>
-                <div className="calculator_content">
-                    <label> Do you recycle Newspaper?
-                        <input type="radio" value="yes" name="newspaper" onChange={() => setNewspaper("yes")}/> Yes
-                        <input type="radio" value="no" name="newspaper" onChange={() => setNewspaper("no")}/> No
-                    </label>
-                </div>
-                <div className="calculator_content">
-                    <label> Do you recycle aluminum and tin?
-                        <input type="radio" value="yes" name="aluminumTin" onChange={() => setAluminumTin("yes")}/> Yes
-                        <input type="radio" value="no" name="aluminumTin" onChange={() => setAluminumTin("no")}/> No
-                    </label>
+                <div className="bottom_section_calculator">
+                    <div className="calculator_content">
+                        <label className="radio_content"> Do you recycle Newspaper?
+                            <input type="radio" value="yes" name="newspaper" className="cal_radio" onChange={() => setNewspaper("yes")}/> Yes
+                            <input type="radio" value="no" name="newspaper" className="cal_radio" onChange={() => setNewspaper("no")}/> No
+                        </label>
+                    </div>
+                    <div className="calculator_content">
+                        <label className="radio_content"> Do you recycle aluminum and tin?
+                            <input type="radio" value="yes" name="aluminumTin" className="cal_radio" onChange={() => setAluminumTin("yes")}/> Yes
+                            <input type="radio" value="no" name="aluminumTin" className="cal_radio" onChange={() => setAluminumTin("no")}/> No
+                        </label>
+                    </div>
                 </div>
                 <button onClick={() => FootprintCalculator(newspaper === "yes", newspaper === "no", aluminumTin === "yes", aluminumTin === "no")}>Calculate Carbon Footprint Usage</button>
                 {/* NOTE: if statement to ensure that the result is given if the value is not null */}
@@ -119,13 +125,12 @@ export default function Calculator(){
                 )}
                 {footprint > 22000 && footprint <= 500000 && (
                     <div className="calculator_result_message high">
-                        <h4>Your Carbon Footprint Usage is really high. Visit <a href="/cfreduction">Carbon Footprint Reduction</a> to figure out methods to reduce carbon footprint.</h4>
+                        <h4>Your Carbon Footprint Usage is really high. Visit <a href="/cfreduction" id="link">Carbon Footprint Reduction</a> to figure out methods to reduce carbon footprint.</h4>
                     </div>
                 )}
                 {footprint > 500000 && (
                     <div className="calculator_error_message limit">
-                        <h4>The amount entered has exceed the calculation for this program.</h4>
-                        <h4>Limit amount accepted: 500000</h4>
+                        <h4>The amount entered has exceed the calculation for this program. Limit amount accepted: 500000</h4>
                     </div>
                     
                 )}
