@@ -1,4 +1,5 @@
 import "./Schedules.css";
+import { useState } from "react";
 import WindTurbine from "../../Components/WindTurbine/WindTurbine";
 import Image1 from "../../Assets/Images/photovoltic_panels.jpg";
 import Image2 from "../../Assets/Images/solar_panels.jpg";
@@ -6,10 +7,14 @@ import Image3 from "../../Assets/Images/small_wind_turbines.jpg";
 import Image4 from "../../Assets/Images/commercial_energy_storage.jpg";
 
 export default function Schedules(){
-    const textTitleHolder = "#";
-    const textInfoHolder = "#";
+    const textTitleHolder = "Book Your Green Energy Installation Today";
+    const textInfoHolder = "Ready to make the switch to sustainable living? Booking your green energy product installation is quick and easy.";
+    
+    const [currentStep, setCurrentStep] = useState(1);
 
-
+    const handleNextStep = () => {
+        setCurrentStep(currentStep + 1)
+    }
 
 
     return(
@@ -26,7 +31,7 @@ export default function Schedules(){
                             approvals from local authorities. The installation team mounts 
                             the solar panels, connects wiring, and installs inverters to 
                             convert solar energy into electricity.</p>
-                        <button>Book Now</button>
+                        <button onClick={()=> window.scroll({top: 4000, behavior: 'smooth'})}>Book Now</button>
                     </div>
                     <div className="image_container">
                         <img src={Image1} alt="Solar Panel" className="top_section_image"/>
@@ -81,34 +86,103 @@ export default function Schedules(){
                 </div>
             </div>
             <div className="schedules_holder_bottom">
-                    <h1>Schedule Your Solar Panel Installation</h1>
-                    <div className="booking_container">
-                        <div className="booking_holder">
-                            <div className="booking_content">
-                                <div className="text_holder">
+                <h1>Schedule Your Solar Panel Installation</h1>
+                <div className="booking_container">
+                    {currentStep === 1 && (
+                        <form onSubmit={handleNextStep}>
+                            <div className="booking_holder">
+                                <div className="booking_content">
+                                    <div className="text_holder">
+                                        <p>Booking can be easily done here, once you've finished your booking. You'll shortly get a call for confirmation of the booking.</p>
+                                    </div>
+                                </div>
+                                <div className="booking_content_lower">
+                                    <h1>Booking Details</h1>
+                                    <div className="booking_info">
+                                        <label>
+                                            <input type="text" placeholder="First name" className="booking_details" required/>
+                                            <input type="text" placeholder="Surname" className="booking_details" required/>
+                                        </label>
+                                    </div>
+                                    <div className="booking_info email">
+                                        <label>
+                                            <input type="email" placeholder="Email Address" className="booking_details_email" required/>
+                                        </label>
+                                    </div>
+                                    <div className="button_container">
+                                        <button type="submit" className="next_button">Next</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    )}
+                    {currentStep === 2 && (
+                        <form onSubmit={handleNextStep}>
+                            <div className="booking_holder_v2">
+                                <div className="booking_content_v2">
+                                    <div className="text_holder_v2">
+                                        <p>Booking can be easily done here, once you've finished your booking. You'll shortly get a call for confirmation of the booking.</p>
+                                    </div>
+                                </div>
+                                <div className="booking_content_lower_v2">
+                                    <h1>Booking Details</h1>
+                                    <div className="booking_info_v2">
+                                        <label>
+                                            <input type="text" placeholder="Street Address" className="booking_details_v2" required/>
+                                            <input type="text" placeholder="City" className="booking_details_v2" required/>
+                                        </label>
+                                    </div>
+                                    <div className="booking_info_lower_v2">
+                                        <label>
+                                            <input type="text" placeholder="County/State/Region" className="booking_details_lower_v2" required/>
+                                            <input type="text" placeholder="Postal Code" className="booking_details_lower_v2" required/>
+                                        </label>
+                                    </div>
+                                    <div className="button_container_v2">
+                                        <button type="submit" className="next_button_v2">Next</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    )}
+                    {currentStep === 3 && (
+                        <form onSubmit={handleNextStep}>
+                            <div className="booking_holder_v3">
+                                <div className="booking_content_v3">
+                                    <div className="text_holder_v3">
+                                        <p>Booking can be easily done here, once you've finished your booking. You'll shortly get a call for confirmation of the booking.</p>
+                                    </div>
+                                </div>
+                                <div className="booking_content_lower_v3">
+                                    <h1>What installation(s) do you require?</h1>
+                                    <div className="booking_info_v3">
+                                        <label className="booking_details_v3">Solar Panels <input type="checkbox" className="booking_checkbox_v3"/></label>     
+                                        <label className="booking_details_v3">Smart Meters <input type="checkbox" className="booking_checkbox_v3"/></label>    
+                                        <lable className="booking_details_v3">EV Charing Stations <input type="checkbox" className="booking_checkbox_v3" defaultChecked/></lable>    
+                                    </div>
+                                    <div className="button_cotainer_v3">
+                                        <button type="submit" className="next_button_v3">Next</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    )}
+                    {currentStep === 4 && (
+                        <div className="booking_holder_v4">
+                            <div className="booking_content_v4">
+                                <div className="text_holder_v4">
                                     <p>Booking can be easily done here, once you've finished your booking. You'll shortly get a call for confirmation of the booking.</p>
                                 </div>
                             </div>
-                            <div className="booking_content_lower">
-                                <h1>Booking Details</h1>
-                                <div className="booking_info">
-                                    <label>
-                                        <input type="text" placeholder="First name" className="booking_details"/>
-                                        <input type="text" placeholder="Surname" className="booking_details"/>
-                                    </label>
-                                </div>
-                                <div className="booking_info email">
-                                    <label>
-                                        <input type="email" placeholder="Email Address" className="booking_details_email"/>
-                                    </label>
-                                </div>
-                                <div className="button_container">
-                                    <button type="button" className="next_button">Next</button>
+                            <div className="booking_content_lower_v4">
+                                <div className="booking_confirmation">
+                                    <p>Thank you for arranging a booking schedule with us regarding the installations of the products selected. Everythings almost complete, we will contact you shortly to discuss further steps.</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    )}
                 </div>
+            </div>
         </div>
     )
 }

@@ -1,0 +1,49 @@
+.terms_conditions_container {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 7.5rem;
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2f2f2f;
+    background-color: #f9fdf9;
+
+    .top_section{
+        margin-bottom: 2.5rem;
+        text-align: center;
+    }
+
+    .top_section p {
+        font-size: 1rem;
+        line-height: 1.6;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .top_section_content h1{
+        color: var(--green_color);
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .lower_section {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .lower_section_content h1 {
+        font-size: 1.4rem;
+        color: var(--green_color);
+        margin-bottom: 0.5rem;
+    }
+    
+    .lower_section_content p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 0.5rem;
+        color: #3a3a3a;
+    }
+}
+
+
+  
