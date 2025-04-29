@@ -14,14 +14,14 @@ export default function Footer(){
                 <Logo/>
             </div>
             <div className="footer_nav_container">
-                <Link href="/calculator" className="nav_link">CALCULATOR</Link>
-                <Link href="/schedules" className="nav_link">SCHEDULES</Link>
-                <Link href="/about" className="nav_link">ABOUT US</Link>
-                <Link href="/products" className="nav_link">PRODUCTS</Link>
-                <Link href="/authentication" className="nav_link">LOGIN</Link>
-                <Link href="/products" className="nav_link">SOLAR PANELS</Link>
-                <Link href="/termsconds" className="nav_link">T&Cs</Link>
-                <Link href="/cfreduction" className="nav_link">HOW TO REDUCE CARBON FOOTPRINT</Link>
+                <Link to="/calculator" className="nav_link">CALCULATOR</Link>
+                <Link to="/schedules" className="nav_link">SCHEDULES</Link>
+                <Link to="/about" className="nav_link">ABOUT US</Link>
+                <Link to="/products" className="nav_link">PRODUCTS</Link>
+                <Link to="/authentication" className="nav_link">LOGIN</Link>
+                <Link to="/products" className="nav_link">SOLAR PANELS</Link>
+                <Link to="/termsconds" className="nav_link">T&Cs</Link>
+                <Link to="/cfreduction" className="nav_link">HOW TO REDUCE CARBON FOOTPRINT</Link>
             </div>
             <div className="social_media_container">
                 <h2>STAY IN TOUCH </h2><br/>
