@@ -1,5 +1,6 @@
 import "./Home.css";
 import WindTurbine from "../../Components/WindTurbine/WindTurbine";
+import { Link } from "react-router-dom";
 
 import Image1 from "../../Assets/Images/green_energy.jpg";
 import Image2 from "../../Assets/Images/solar_panels.jpg";
@@ -49,7 +50,7 @@ export default function Home(){
                         <h3>Green energy is not only crucial for reducing environmental 
                         harm but also offers social and economic advantages that benefit 
                         society as a whole.</h3>
-                        <a href="/cfreduction">Further Info <img src={Icon1} alt="Right Arrow key" className="arrow_icon"/></a>
+                        <Link to="/cfreduction">Further Info <img src={Icon1} alt="Right Arrow key" className="arrow_icon"/></Link>
                     </div>
                     <div className="energy_change_image_container">
                         <img src={Image6} alt="Green Energy"/>
