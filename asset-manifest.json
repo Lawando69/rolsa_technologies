@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/rolsa_technologies/static/css/main.d90ebea5.css",
-    "main.js": "/rolsa_technologies/static/js/main.8351ae3e.js",
+    "main.css": "/rolsa_technologies/static/css/main.e8807eec.css",
+    "main.js": "/rolsa_technologies/static/js/main.ec00ba7a.js",
     "static/js/453.2aae5fb3.chunk.js": "/rolsa_technologies/static/js/453.2aae5fb3.chunk.js",
     "static/media/smart_thermostats.jpg": "/rolsa_technologies/static/media/smart_thermostats.718be29ab464b484da34.jpg",
     "static/media/green_energy_3.jpg": "/rolsa_technologies/static/media/green_energy_3.a103eb63aeccbb0610ac.jpg",
@@ -25,12 +25,12 @@
     "static/media/Profile_icon.svg": "/rolsa_technologies/static/media/Profile_icon.ada9b583e6f382a7ea6f3124933c1d06.svg",
     "index.html": "/rolsa_technologies/index.html",
     "static/media/arrow_right_icon.svg": "/rolsa_technologies/static/media/arrow_right_icon.94bc5c3fbcf743d50a5ed56517a34dd4.svg",
-    "main.d90ebea5.css.map": "/rolsa_technologies/static/css/main.d90ebea5.css.map",
-    "main.8351ae3e.js.map": "/rolsa_technologies/static/js/main.8351ae3e.js.map",
+    "main.e8807eec.css.map": "/rolsa_technologies/static/css/main.e8807eec.css.map",
+    "main.ec00ba7a.js.map": "/rolsa_technologies/static/js/main.ec00ba7a.js.map",
     "453.2aae5fb3.chunk.js.map": "/rolsa_technologies/static/js/453.2aae5fb3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d90ebea5.css",
-    "static/js/main.8351ae3e.js"
+    "static/css/main.e8807eec.css",
+    "static/js/main.ec00ba7a.js"
   ]
 }
