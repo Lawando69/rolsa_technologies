@@ -1,5 +1,6 @@
 import "./Footer.css";
 import Logo from "../Logo/Logo";
+import { Link } from "react-router-dom";
 
 import Icon1 from "../../Assets/Icons/linkedin_icon.png";
 import Icon2 from "../../Assets/Icons/instagram_icon.png";
@@ -13,14 +14,14 @@ export default function Footer(){
                 <Logo/>
             </div>
             <div className="footer_nav_container">
-                <a href="/calculator" className="nav_link">CALCULATOR</a>
-                <a href="/schedules" className="nav_link">SCHEDULES</a>
-                <a href="/about" className="nav_link">ABOUT US</a>
-                <a href="/products" className="nav_link">PRODUCTS</a>
-                <a href="/authentication" className="nav_link">LOGIN</a>
-                <a href="/products" className="nav_link">SOLAR PANELS</a>
-                <a href="/termsconds" className="nav_link">T&Cs</a>
-                <a href="/cfreduction" className="nav_link">HOW TO REDUCE CARBON FOOTPRINT</a>
+                <Link href="/calculator" className="nav_link">CALCULATOR</Link>
+                <Link href="/schedules" className="nav_link">SCHEDULES</Link>
+                <Link href="/about" className="nav_link">ABOUT US</Link>
+                <Link href="/products" className="nav_link">PRODUCTS</Link>
+                <Link href="/authentication" className="nav_link">LOGIN</Link>
+                <Link href="/products" className="nav_link">SOLAR PANELS</Link>
+                <Link href="/termsconds" className="nav_link">T&Cs</Link>
+                <Link href="/cfreduction" className="nav_link">HOW TO REDUCE CARBON FOOTPRINT</Link>
             </div>
             <div className="social_media_container">
                 <h2>STAY IN TOUCH </h2><br/>
