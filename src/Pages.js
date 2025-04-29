@@ -22,7 +22,7 @@ export default function Pages(){
                 <Route path="/schedules" element={<Schedules/>}></Route>
                 <Route path="/calculator" element={<Calculator/>}></Route>
                 <Route path="/authentication" element={<Authentication/>}></Route>
-                <Route path="/termscond" element={<TermsConditions/>}></Route>
+                <Route path="/termsconds" element={<TermsConditions/>}></Route>
             </Routes>
         </main>
     )
