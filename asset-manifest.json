@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e8807eec.css",
-    "main.js": "/static/js/main.e99f2448.js",
+    "main.css": "/static/css/main.d90ebea5.css",
+    "main.js": "/static/js/main.82f77796.js",
     "static/js/453.2aae5fb3.chunk.js": "/static/js/453.2aae5fb3.chunk.js",
     "static/media/smart_thermostats.jpg": "/static/media/smart_thermostats.718be29ab464b484da34.jpg",
     "static/media/green_energy_3.jpg": "/static/media/green_energy_3.a103eb63aeccbb0610ac.jpg",
@@ -25,12 +25,12 @@
     "static/media/Profile_icon.svg": "/static/media/Profile_icon.ada9b583e6f382a7ea6f3124933c1d06.svg",
     "index.html": "/index.html",
     "static/media/arrow_right_icon.svg": "/static/media/arrow_right_icon.94bc5c3fbcf743d50a5ed56517a34dd4.svg",
-    "main.e8807eec.css.map": "/static/css/main.e8807eec.css.map",
-    "main.e99f2448.js.map": "/static/js/main.e99f2448.js.map",
+    "main.d90ebea5.css.map": "/static/css/main.d90ebea5.css.map",
+    "main.82f77796.js.map": "/static/js/main.82f77796.js.map",
     "453.2aae5fb3.chunk.js.map": "/static/js/453.2aae5fb3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e8807eec.css",
-    "static/js/main.e99f2448.js"
+    "static/css/main.d90ebea5.css",
+    "static/js/main.82f77796.js"
   ]
 }
