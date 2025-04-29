@@ -19,8 +19,8 @@ export default function Footer(){
                 <a href="/products" className="nav_link">PRODUCTS</a>
                 <a href="/authentication" className="nav_link">LOGIN</a>
                 <a href="/products" className="nav_link">SOLAR PANELS</a>
-                <a href="/t&cs" className="nav_link">T&Cs</a>
-                <a href="cfreduction" className="nav_link">HOW TO REDUCE CARBON FOOTPRINT</a>
+                <a href="/termsconds" className="nav_link">T&Cs</a>
+                <a href="/cfreduction" className="nav_link">HOW TO REDUCE CARBON FOOTPRINT</a>
             </div>
             <div className="social_media_container">
                 <h2>STAY IN TOUCH </h2><br/>
